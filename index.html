@@ -1,0 +1,98 @@
+<style>
+    /* Metodo utilizado para declaracao de variaveis */
+    :root {
+        --backgroud: #2D7132;
+        --primary-button: #032221;
+    }
+
+    body {
+        background-color: var(--backgroud);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .logo-biosearch-index img {
+        width: 160px;
+        height: 160px;
+    }
+
+    /* Mobile-first */
+    @media (min-width: 768px) {
+        .logo-biosearch-index img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioSearch - Welcome to our website</title>
+</head>
+
+<body>
+
+    <main>
+        <section class="flex flex-col items-center text-center gap-6 max-w-md">
+
+            <div class="logo-biosearch-index">
+                <img src="/frontend/images/logo_biosearch.png">
+            </div>
+
+            <p class="text-white text-base sm:text-lg leading-relaxed px-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            </p>
+
+            <div class="flex flex-col w-full gap-4">
+
+                <!-- Feature nova: debater com o pessaol sobre -->
+                <button
+                    class="bg-white text-gray-800 py-3 rounded-xl flex items-center justify-center gap-3 shadow-lg hover:scale-105 transition">
+                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" width="20">
+                    <a href="#">Entrar com o Google</a>
+                </button>
+
+                <button
+                    class="bg-[var(--primary-button)] text-white py-3 rounded-xl shadow-md hover:scale-105 transition">
+                    <a href="#">Getting Started</a>
+                </button>
+
+            </div>
+
+            <div class="nav-log-in" style="display: flex; gap: 3px;">
+                <p class="text-sm text-white">
+                    Already have an account?
+                </p>
+                <p class="text-sm text-white" style="color: var(--primary-button);">
+                    <a href="">Log In</a>
+                </p>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer class="text-center py-6 text-white text-sm opacity-80">
+        &copy; 2026 - BioSearch on Github Organizations
+    </footer>
+
+    <!-- Tailwind CSS Docs -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
