@@ -1,37 +1,31 @@
-# [NOME DO PROJETO]
+# BioSearch
 
-> [Breve descrição do projeto]
+BioSearch é um aplicativo web que recebe a foto de uma planta e usa IA para identificar informações úteis sobre ela, como espécie provável, cuidados, sinais de saúde e orientações básicas de manutenção.
 
 ## Sobre
 
-[Descreva aqui o objetivo do projeto.]
+O projeto visa utilizar de maneira real os conhecimentos obtidos na matéria de Ferramentas Web e UX, realizando a produção de um website a partir de um protótipo de aplicação feita no figma.
 
-## Tecnologias
-
-- [Tecnologia 1]
-- [Tecnologia 2]
-- [Tecnologia 3]
 
 ## Como rodar o site
 
 ### Pré-requisitos
 
-- [Node.js versão X ou superior]
-- [npm versão X ou superior]
+- Node.js 18 ou superior
+- npm 9 ou superior
 
 ### Passo a passo
 
-1. Clone o repositório:
+1. Clone o repositório.
 
 ```bash
-git clone [URL_DO_REPOSITORIO]
+git clone https://github.com/biosearch-web/biosearch-website.git
 ```
 
-2. Acesse a pasta do projeto:
+2. Acesse a pasta do app.
 
 ```bash
-cd [NOME_DA_PASTA_DO_PROJETO]
-cd [NOME_DA_PASTA_DO_APP]
+cd BioSearch
 ```
 
 3. Instale as dependências:
