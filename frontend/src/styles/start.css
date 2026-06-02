@@ -9,10 +9,15 @@
     height: 100vh;
 }
 
-.container-main-image p {
+
+
+ .container p{
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 24px;
-    margin-top: 0px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 300px;
 }
 
 .container-main-image img {
