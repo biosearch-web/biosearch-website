@@ -1,3 +1,16 @@
 *{
     background-color: #467048;
 }
+
+.container-main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-main-image img {
+    width: 350px;
+    height: 350px;
+    background-color: red;
+}

@@ -2,18 +2,20 @@
     background-color: #467048;
 }
 
-.logo{
+.container-main-image {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    position: absolute;
-    left: 575px;
-    top: 175px;
+    height: 100vh;
 }
 
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+.container-main-image p {
     color: white;
-    position: fixed;
-    bottom: 175px;
+    font-size: 24px;
+    margin-top: 0px;
 }
 
+.container-main-image img {
+    width: 350px;
+    height: 350px;
+}
