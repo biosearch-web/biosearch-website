@@ -10,43 +10,14 @@
     height: 100vh;
 }
 
-
-
- .container p{
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    position: relative;
-    bottom: 300px;
-}
-
 .container-main-image img {
     width: 350px;
     height: 350px;
 }
 
-button{
-    border-radius: 50px;
-    border-style: none;
-    font-size: 20px;
-    width: 290px;
-    height: 60px;
-    position: relative;
-    bottom: 200px;
-    margin-left: 725px;
-    background-color: #335441;
-    color: white;
-}
-
-.login{
+.login {
     color: white;
     position: relative;
-    margin-left: 750px;
-    bottom: 200px;
-}
-
-.login button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 50px;
+    text-align: center;
 }
