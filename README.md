@@ -6,15 +6,41 @@ BioSearch é um aplicativo web que recebe a foto de uma planta e usa IA para ide
 
 O projeto visa utilizar de maneira real os conhecimentos obtidos na matéria de Ferramentas Web e UX, realizando a produção de um website a partir de um protótipo de aplicação feita no figma.
 
+## Stack atual
+
+O projeto está em fase inicial e, neste momento, é construído com tecnologias web puras:
+
+- **HTML5** — uma página por tela em `frontend/pages/`
+- **CSS3** — folhas de estilo por página em `frontend/src/styles/`
+- **JavaScript vanilla** — ainda sem comportamento dinâmico implementado
+
+Não há `package.json`, build step ou framework. A migração futura para React + Vite + Tailwind CSS está prevista no escopo do produto (`docs/SCOPE.md`).
+
+## Estrutura do projeto
+
+```
+frontend/
+├── public/index.html          # template raiz (a definir)
+├── pages/                     # uma página HTML por tela
+│   ├── start.html             # tela inicial (implementada)
+│   ├── signin.html            # login
+│   ├── signup.html            # cadastro
+│   ├── camerapage.html        # envio/captura de foto
+│   ├── resultpage.html        # resultado da análise
+│   ├── user.html              # perfil
+│   ├── friends.html           # social
+│   └── passwordrecover.html   # recuperação de senha
+└── src/
+    ├── styles/                # CSS por página
+    ├── components/            # header, footer, articles (em construção)
+    └── assets/                # imagens, logo
+```
 
 ## Como rodar o site
 
-### Pré-requisitos
+Como os arquivos HTML usam caminhos absolutos para CSS e imagens (ex.: `/frontend/src/assets/logo.png`), é necessário servir a raiz do repositório por um servidor estático — abrir o arquivo direto pelo navegador (`file://`) quebra os assets.
 
-- Node.js 18 ou superior
-- npm 9 ou superior
-
-### Passo a passo
+### Opção 1 — Python (recomendado, sem dependências)
 
 1. Clone o repositório.
 
@@ -22,55 +48,25 @@ O projeto visa utilizar de maneira real os conhecimentos obtidos na matéria de 
 git clone https://github.com/biosearch-web/biosearch-website.git
 ```
 
-2. Acesse a pasta do app.
+2. Acesse a pasta do projeto.
 
 ```bash
-cd BioSearch
+cd biosearch-website
 ```
 
-3. Instale as dependências:
+3. Inicie um servidor estático na raiz.
 
 ```bash
-npm install
+python3 -m http.server 8000
 ```
 
-4. Instale o TailwindCSS no projeto:
+4. Abra no navegador: `http://localhost:8000/frontend/pages/start.html`
 
-```bash
-npm install tailwindcss @tailwindcss/vite
-```
+### Opção 2 — VS Code Live Server
 
-5. Configure o plugin do TailwindCSS no Vite (arquivo `vite.config.js`):
-
-```js
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import tailwindcss from "@tailwindcss/vite";
-
-export default defineConfig({
-  plugins: [react(), tailwindcss()],
-});
-```
-
-6. Importe o TailwindCSS no CSS global (exemplo em `src/index.css`):
-
-```css
-@import "tailwindcss";
-```
-
-7. Inicie o servidor de desenvolvimento:
-
-```bash
-npm run dev
-```
-
-8. Abra no navegador o endereço exibido no terminal (exemplo: `http://localhost:5173`).
-
-## Scripts disponíveis
-
-- `npm run dev`: inicia em modo desenvolvimento
-- `npm run build`: gera versão de produção
-- `npm run preview`: visualiza build localmente
+1. Instale a extensão **Live Server** no VS Code.
+2. Abra a pasta do projeto.
+3. Clique com o botão direito em `frontend/pages/start.html` → **Open with Live Server**.
 
 ## Contribuição
 
