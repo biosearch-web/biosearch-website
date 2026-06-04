@@ -9,9 +9,11 @@ body {
     color: white;
 }
 
-h1{
+h1 {
     color: white;
+    font-size: 20px;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -25,7 +27,6 @@ h1{
 .container-main-image img {
     width: 350px;
     height: auto;
-    margin-bottom: 20px;
 }
 
 /*---- CONTEÚDO PRINCIPAL ----*/
@@ -53,6 +54,7 @@ h1{
     text-align: center;
     border-radius: 40px;
     font-size: 20px;
+    margin-top: 80px;
 }
 
 .btn-getting-started:hover {
@@ -96,5 +98,13 @@ a {
     .container-button button {
         width: 80%;
         max-width: 300px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .btn-getting-started {
+    margin-top: 200px;
     }
 }
