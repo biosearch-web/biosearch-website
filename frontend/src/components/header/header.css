@@ -3,100 +3,144 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
+
+/*--- HEADER STYLE ---*/
 
 header {
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: rgba(11, 15, 25, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  color: var(--color-light);
-  box-sizing: border-box;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 nav {
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.menu-icon {
+  color: white;
+  font-size: 35px;
+
+  cursor: pointer;
+  user-select: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.logo h1 {
+  margin: 0;
+  margin-top: 5px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.user-icon {
+  margin-left: auto;
+  margin-top: 10px;
   display: flex;
   align-items: center;
 }
 
+.user-icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/*--- MENU SIDEBAR STYLE ---*/
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100vh;
+  background-color: #3D544D;
+  transition: left 0.3s ease;
+  z-index: 2000;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.close-menu {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  padding: 20px 24px 10px;
+}
+
 .links {
-  display: flex;
   list-style: none;
   margin: 0;
-  padding: 0;
-  gap: 2rem;
+  padding: 0 24px;
 }
 
 .links li {
-  margin: 0;
+  margin-bottom: 24px;
 }
 
-a {
-  color: var(--color-text-muted);
+.links a {
+  color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 500;
-  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: opacity 0.2s ease;
 }
 
-a:hover {
-  color: var(--color-primary);
-  text-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+.links a:hover {
+  opacity: 0.8;
 }
 
-.menu-icon {
-  display: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  user-select: none;
-}
+/*--- MOBIELE FIRST STYLE ---*/
 
 @media (max-width: 768px) {
-  .links {
-    display: none; 
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: rgba(26, 30, 41, 0.95);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 1.5rem 0;
-    gap: 1.5rem;
-  }
-
-  .links.active {
-    display: flex; 
+  nav {
+    height: 70px;
+    padding: 0 16px;
   }
 
   .menu-icon {
-    display: block; 
+    font-size: 32px;
   }
 
-  .links li {
-    text-align: center;
+  .logo {
+    margin-left: 15px;
   }
 
-  a {
-    font-size: 1.125rem;
-    display: block;
-    padding: 0.5rem;
+  .logo h1 {
+    font-size: 22px;
+  }
+
+  .user-icon img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .sidebar {
+    width: 250px;
+    left: -250px;
+  }
+
+  .sidebar.active {
+    left: 0;
   }
 }
