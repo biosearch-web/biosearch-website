@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
     <script type="module" src="../index.js"></script>
+    <script src="../src/utils/home.js" defer></script>
 
     <title>BioSearch - Home</title>
 </head>
@@ -23,13 +24,15 @@
             <section class="hero">
                 <h2>Hi, there</h2>
                 <h1>
-                    Show us what specie you wantto know about</h1>
+                    Show us what specie you want to know about</h1>
             </section>
 
             <section class="take-photo">
-                <button class="upload-btn">
-                    <img src="../src/assets/camera-icon.png" alt="Upload Icon" width="80px">
+                <button class="upload-btn" id="openCameraBtn" type="button">
+                    <img src="../src/assets/camera-icon.png" alt="Upload Icon" width="80">
                 </button>
+
+                <input type="file" id="fileInput" accept="image/*" capture="environment" style="display: none;">
             </section>
 
         </div>
