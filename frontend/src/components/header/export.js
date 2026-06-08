@@ -1,0 +1,1 @@
+export { HeaderComponent as Header } from './export.js';
