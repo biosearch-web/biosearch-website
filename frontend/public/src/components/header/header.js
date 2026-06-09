@@ -30,7 +30,7 @@ template.innerHTML = `
     </li>
 
     <li>
-      <a href="/search">
+      <a href="ranking.html">
         <img src="../src/assets/star-svgrepo-com.svg" alt="Log out" width="30" height="25" id="ranking-icon"> Ranking
       </a>
     </li>

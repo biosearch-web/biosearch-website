@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #032221;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+h1{
+    color: white;
+}
+
+.user-image{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+    border-radius: 80px;
+}
+
+.user-second{
+    position: relative;
+    margin-left: 500px;
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+    border-radius: 80px;
+}
+
+@media (min-width: 768px) {
+}
