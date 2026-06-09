@@ -29,24 +29,16 @@ h1, h2, h3{
     border-radius: 80px;
 }
 
+.user-1{
+
+}
+
 .user-2{
-    position: relative;
-    margin-left: 500px;
-    margin-top: -143px;
-    width: 150px;
-    height: 150px;
-    background-color: gray;
-    border-radius: 80px;
+
 }
 
 .user-3{
-    position: relative;
-    margin-right: 500px;
-    width: 150px;
-    height: 150px;
-    background-color: gray;
-    border-radius: 80px;
+    
 }
-
 @media (min-width: 768px) {
 }
