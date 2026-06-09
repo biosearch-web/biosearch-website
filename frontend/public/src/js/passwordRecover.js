@@ -1,7 +1,12 @@
-const form = document.getElementById("recoverForm"); //Encontra o formulário pelo ID
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("recoverForm"); // Encontra o formulário pelo ID
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
+    if (!form) {
+        return;
+    }
 
-    window.location.href = "passwordsuccess.html"; //Redireciona para nova página
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        window.location.href = "passwordsucess.html"; // Redireciona para página de sucesso
+    });
 });
