@@ -12,7 +12,7 @@ template.innerHTML = `
     </div>
 
     <div class="user-icon">
-      <a href="/profile">
+      <a href="user.html">
         <img src="../src/assets/user-icon.png" alt="User Profile">
       </a>
     </div>
