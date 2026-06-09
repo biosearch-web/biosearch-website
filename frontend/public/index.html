@@ -2,28 +2,185 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BioSearch - Inicial Page</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="src/styles/start.css">
-    <link rel="stylesheet" href="src/styles/global.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioSearch — Discover the plants near you</title>
+  <link rel="icon" type="image/png" href="src/assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/landing.css">
+  <link rel="stylesheet" href="src/styles/global.css">
 </head>
 
-<main>
-    <section class="container">
+<body>
+  <div class="page">
 
-        <div class="container-main-image">
-            <img src="src/assets/logo.png" alt="Logo BioSearch">
+    <!-- SVG decorativa sinuosa -->
+    <svg class="line-svg" viewBox="0 0 1440 3200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M 720 0
+           C 720 80, 400 180, 320 400
+           C 240 620, 600 750, 680 960
+           C 760 1170, 300 1280, 260 1500
+           C 220 1720, 700 1820, 780 2020
+           C 860 2220, 400 2380, 380 2580
+           C 360 2780, 700 2900, 720 3200"
+        stroke="rgba(168,252,233,0.22)"
+        stroke-width="1.5"
+        fill="none"
+        stroke-linecap="round"
+      />
+    </svg>
+
+    <!-- Sparkles -->
+    <span class="sparkle" style="top:9%;left:14%;font-size:12px;opacity:0.35;">✦</span>
+    <span class="sparkle" style="top:7%;left:78%;font-size:10px;opacity:0.25;">✦</span>
+    <span class="sparkle" style="top:18%;left:92%;font-size:16px;opacity:0.3;">✦</span>
+    <span class="sparkle" style="top:32%;left:8%;font-size:10px;opacity:0.2;">✦</span>
+    <span class="sparkle" style="top:45%;left:88%;font-size:14px;opacity:0.28;">✦</span>
+    <span class="sparkle" style="top:55%;left:5%;font-size:18px;opacity:0.18;">✦</span>
+    <span class="sparkle" style="top:62%;left:72%;font-size:11px;opacity:0.3;">✦</span>
+    <span class="sparkle" style="top:74%;left:18%;font-size:13px;opacity:0.22;">✦</span>
+    <span class="sparkle" style="top:82%;left:60%;font-size:10px;opacity:0.28;">✦</span>
+    <span class="sparkle" style="top:91%;left:38%;font-size:15px;opacity:0.2;">✦</span>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="nav-logo">
+        <img src="src/assets/logo.png" alt="BioSearch">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#offers">What do we offer?</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+
+      <!-- Hero -->
+      <section class="hero" id="about">
+        <div class="hero-text">
+          <h1>Discover all the<br>plants near you.</h1>
+          <p>Send a photo and our AI identifies the species, health status, and care tips — instantly, in plain language.</p>
+          <a href="pages/signup.html" class="btn-primary">Get started</a>
+          <div class="avatar-group">
+            <div class="avatars">
+              <div class="avatar">AL</div>
+              <div class="avatar">MR</div>
+              <div class="avatar">JS</div>
+            </div>
+            <p>Join thousands of plant lovers</p>
+          </div>
         </div>
-        <section class="container-button">
-            <h1>Technology that helps you take better care of nature.</h1>
-            <a href="pages/signup.html" class="btn-getting-started">
-                Getting Started
-            </a>
-            <p>Already have an account?
-                <a href="pages/signin.html">Sign In</a>
-            </p>
-        </section>
-    </section>
-</main>
+        <div class="hero-visual">
+          <svg class="hero-plant" viewBox="0 0 280 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="potGrad" cx="50%" cy="30%" r="60%">
+                <stop offset="0%" stop-color="#d4763a"/>
+                <stop offset="100%" stop-color="#8b3a12"/>
+              </radialGradient>
+            </defs>
+            <!-- Sombra do vaso -->
+            <ellipse cx="140" cy="312" rx="52" ry="10" fill="rgba(0,0,0,0.25)"/>
+            <!-- Corpo do vaso -->
+            <path d="M93 272 C 89 300 115 310 140 310 C 165 310 191 300 187 272 Z" fill="url(#potGrad)"/>
+            <!-- Borda do vaso -->
+            <rect x="86" y="262" width="108" height="16" rx="8" fill="#c96030"/>
+            <!-- Terra -->
+            <ellipse cx="140" cy="262" rx="54" ry="8" fill="#1c0d05"/>
+            <!-- Caule -->
+            <path d="M140 260 C 139 244 137 228 135 208" stroke="#2d6a3f" stroke-width="4" stroke-linecap="round"/>
+            <!-- Folha traseira esquerda (mais escura) -->
+            <path d="M133 214 C 72 196 38 152 48 100 C 58 72 92 76 110 110 C 124 138 130 178 133 214 Z" fill="#163d24"/>
+            <path d="M133 214 C 88 190 58 148 65 98" stroke="#1e5430" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+            <!-- Folha traseira direita (mais escura) -->
+            <path d="M137 210 C 200 190 238 146 228 94 C 218 66 184 70 168 106 C 154 136 143 174 137 210 Z" fill="#163d24"/>
+            <path d="M137 210 C 184 188 216 146 212 94" stroke="#1e5430" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+            <!-- Folha meio esquerda -->
+            <path d="M131 226 C 62 205 24 156 36 100 C 48 68 87 72 107 112 C 122 142 127 186 131 226 Z" fill="#245c38"/>
+            <path d="M131 226 C 78 200 45 155 54 100" stroke="#2d7245" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+            <!-- Fendas monstera folha esq -->
+            <path d="M66 128 C 60 116 62 104 70 100" stroke="#245c38" stroke-width="5" stroke-linecap="round"/>
+            <path d="M80 160 C 73 147 75 133 83 129" stroke="#245c38" stroke-width="5" stroke-linecap="round"/>
+            <!-- Folha meio direita -->
+            <path d="M139 222 C 210 200 250 152 238 96 C 226 64 188 68 172 108 C 157 140 143 182 139 222 Z" fill="#245c38"/>
+            <path d="M139 222 C 196 196 230 152 222 96" stroke="#2d7245" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+            <!-- Fendas monstera folha dir -->
+            <path d="M212 118 C 218 106 217 94 210 90" stroke="#245c38" stroke-width="5" stroke-linecap="round"/>
+            <path d="M200 150 C 207 137 205 123 198 119" stroke="#245c38" stroke-width="5" stroke-linecap="round"/>
+            <!-- Folha frente esquerda (mais clara) -->
+            <path d="M129 238 C 55 212 20 160 34 103 C 46 70 86 72 108 116 C 122 146 126 194 129 238 Z" fill="#2d7d3a"/>
+            <path d="M129 238 C 68 208 38 160 48 103" stroke="#3d9b4a" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+            <!-- Fendas frente esq -->
+            <path d="M56 130 C 49 117 51 103 60 98" stroke="#2d7d3a" stroke-width="6" stroke-linecap="round"/>
+            <path d="M72 164 C 64 150 66 135 75 130" stroke="#2d7d3a" stroke-width="6" stroke-linecap="round"/>
+            <!-- Folha frente direita (mais clara) -->
+            <path d="M141 233 C 218 207 256 155 242 98 C 228 65 186 67 166 112 C 151 146 141 192 141 233 Z" fill="#3d9b4a"/>
+            <path d="M141 233 C 204 202 236 153 226 97" stroke="#52b75a" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+            <!-- Fendas frente dir -->
+            <path d="M218 124 C 225 110 224 96 216 91" stroke="#3d9b4a" stroke-width="6" stroke-linecap="round"/>
+            <path d="M205 158 C 213 144 211 129 203 124" stroke="#3d9b4a" stroke-width="6" stroke-linecap="round"/>
+            <!-- Brilho nas folhas -->
+            <path d="M129 238 C 68 208 38 160 48 103" stroke="rgba(168,252,233,0.08)" stroke-width="1" stroke-linecap="round"/>
+            <path d="M141 233 C 204 202 236 153 226 97" stroke="rgba(168,252,233,0.08)" stroke-width="1" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </section>
+
+      <!-- Partners -->
+      <div class="partners">
+        <p>Powered by</p>
+        <div class="partners-line"></div>
+        <div class="partner-logos">
+          <span class="partner-logo">OpenAI</span>
+          <span class="partner-logo">Vision API</span>
+          <span class="partner-logo">Supabase</span>
+        </div>
+      </div>
+
+      <!-- What do we offer -->
+      <section class="offers" id="offers">
+        <h2>What do we offer?</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="card-icon">🌿</div>
+            <h3>Discover Species</h3>
+            <p>Identify the probable species and botanical family from a single photo, with confidence level included.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">📊</div>
+            <h3>Share your progress</h3>
+            <p>Save your analyses, track your plants over time and share discoveries with friends.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">💡</div>
+            <h3>Direct informations</h3>
+            <p>Get care tips, watering frequency, light needs, and health alerts — all in plain, friendly language.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="contact">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <span>BioSearch</span>
+            <p>Technology that helps you take better care of nature.</p>
+          </div>
+          <div class="footer-links">
+            <a href="pages/signin.html">Sign In</a>
+            <a href="pages/signup.html">Sign Up</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+          </div>
+        </div>
+        <p class="footer-copy">© 2025 BioSearch. All rights reserved.</p>
+      </footer>
+
+    </div>
+  </div>
+</body>
+
+</html>
