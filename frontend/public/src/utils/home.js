@@ -12,14 +12,14 @@ fileInput.addEventListener('change', (event) => {
 
     console.log('Arquivo selecionado:', file);
 
-    // Exemplo: exibir preview
     const reader = new FileReader();
 
     reader.onload = (e) => {
-        console.log('Imagem carregada:', e.target.result);
+        const imageData = e.target.result;
 
-        // Exemplo:
-        // document.getElementById('preview').src = e.target.result;
+        sessionStorage.setItem('uploadedImage', imageData);
+
+        window.location.href = './resultpage.html';
     };
 
     reader.readAsDataURL(file);

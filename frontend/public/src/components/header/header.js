@@ -25,13 +25,13 @@ template.innerHTML = `
   <ul class="links">
     <li>
       <a href="start.html">
-        ↪ Log out
+        <img src="../src/assets/exit-to-app-svgrepo-com.svg" alt="Log out" width="30" height="25" id="log-out-icon"> Log out 
       </a>
     </li>
 
     <li>
       <a href="/search">
-        ★ Ranking
+        <img src="../src/assets/star-svgrepo-com.svg" alt="Log out" width="30" height="25" id="ranking-icon"> Ranking
       </a>
     </li>
   </ul>

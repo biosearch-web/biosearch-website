@@ -110,6 +110,14 @@ nav {
   opacity: 0.8;
 }
 
+#log-out-icon {
+  filter: brightness(0) invert(1);
+}
+
+#ranking-icon {
+  filter: brightness(0) invert(1);
+}
+
 /*--- MOBIELE FIRST STYLE ---*/
 
 @media (max-width: 768px) {

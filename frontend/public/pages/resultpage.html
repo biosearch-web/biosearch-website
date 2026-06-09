@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../src/styles/global.css">
+    <link rel="stylesheet" href="../src/styles/resultpage.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <script type="module" src="../src/index.js"></script>
+    <script type="module" src="../src/utils/resultpage.js" defer></script>
+    <title>BioSearch</title>
+</head>
+
+<body>
+    <main>
+        <app-header></app-header>
+        <div class="container">
+            <div class="container-result">
+                <img id="previewImage" alt="Imagem enviada">
+                <img id="userProfile" src="../src/assets/user-icon.png" alt="User Profile">
+            </div>
+
+            <div class="container-gemini-api">
+                <h2>Sobre esta imagem:</h2><br>
+                <p id="speciesName">Carregando...</p>
+                <br>
+                <h3>Informações Adicionais</h3>
+                <br>
+                <p id="speciesInfo">Carregando...</p>
+            </div>
+
+            <button class="music-btn">
+                 <img src="../src/assets/music-svgrepo-com.svg">
+            </button>
+        </div>
+    </main>
+
+</body>
+
+</html>
