@@ -68,6 +68,34 @@ python3 -m http.server 8000
 2. Abra a pasta do projeto.
 3. Clique com o botão direito em `frontend/pages/start.html` → **Open with Live Server**.
 
+> As opções acima servem **apenas o front estático**. A análise de planta por IA depende da função serverless em `/api`, que não roda nesses servidores. Para testá-la, use a Opção 3.
+
+### Opção 3 — Vercel CLI (com a análise por IA)
+
+A identificação da planta é feita por uma função serverless (`api/analyze.js`) que chama o Google Gemini. A chave fica numa variável de ambiente no servidor e **nunca** é exposta no navegador.
+
+1. Instale a Vercel CLI.
+
+```bash
+npm i -g vercel
+```
+
+2. Gere uma chave gratuita em [aistudio.google.com](https://aistudio.google.com) (Get API key) e crie um arquivo `.env.local` na raiz (a partir de `.env.local.example`):
+
+```bash
+GEMINI_API_KEY=...
+```
+
+3. Rode o ambiente de desenvolvimento da Vercel.
+
+```bash
+vercel dev
+```
+
+4. Abra no navegador: `http://localhost:3000/frontend/public/pages/start.html`
+
+> Em produção, configure `GEMINI_API_KEY` em **Settings → Environment Variables** no painel da Vercel. Nunca commite a chave.
+
 ## Contribuição
 
 1. Faça um fork do projeto.

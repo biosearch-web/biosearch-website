@@ -1,0 +1,10 @@
+# Variáveis de ambiente (NUNCA commitar a chave da OpenAI)
+.env
+.env.local
+.env*.local
+
+# Vercel
+.vercel
+
+# Dependências (caso a Vercel CLI gere)
+node_modules/
