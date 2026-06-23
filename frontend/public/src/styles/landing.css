@@ -192,6 +192,22 @@ body {
   font-weight: 700;
   color: var(--cyan);
   margin-left: -10px;
+  overflow: hidden;
+}
+
+.avatar a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .avatars .avatar:first-child {
