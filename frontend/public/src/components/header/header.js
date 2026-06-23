@@ -11,7 +11,9 @@ template.innerHTML = `
     <div class="menu-icon">☰</div>
 
     <div class="logo">
-      <h1>BioSearch</h1>
+      <a href="home.html" style="text-decoration: none;">
+  <h1>BioSearch</h1>
+</a>
     </div>
 
     <div class="user-icon">
