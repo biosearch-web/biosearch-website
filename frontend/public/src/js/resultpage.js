@@ -1,12 +1,28 @@
-// Exibe a imagem enviada e busca a análise da planta na função serverless /api/analyze.
-// A função no servidor é quem fala com o Gemini; aqui só enviamos a imagem e
-// preenchemos os campos com o JSON retornado.
 
+const PROFILE_IMAGE_KEY = 'biosearch-profile-image';
+const DEFAULT_PROFILE_IMAGE = '../src/assets/user-icon.png';
 const previewImage = document.getElementById('previewImage');
 const imageData = sessionStorage.getItem('uploadedImage');
 
+function updateUserProfileImage(imageSrc) {
+    const userProfile = document.getElementById('userProfile');
+    if (userProfile) {
+        userProfile.src = imageSrc || DEFAULT_PROFILE_IMAGE;
+    }
+}
+
+function syncProfileImage() {
+    const savedProfileImage = localStorage.getItem(PROFILE_IMAGE_KEY);
+    updateUserProfileImage(savedProfileImage || DEFAULT_PROFILE_IMAGE);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    syncProfileImage();
+    window.addEventListener('storage', syncProfileImage);
+    window.addEventListener('profile-image-changed', syncProfileImage);
+});
+
 if (!imageData) {
-    // Sem imagem na sessão não há o que analisar — orienta o usuário a voltar.
     mostrarErro('Nenhuma imagem encontrada. Volte e envie uma foto da planta.');
 } else {
     previewImage.src = imageData;
@@ -52,7 +68,6 @@ function definirTexto(id, valor) {
     if (elemento) elemento.textContent = valor || '—';
 }
 
-// Preenche o badge de confiança e aplica a cor conforme o nível (alta/média/baixa).
 function definirConfianca(valor) {
     const elemento = document.getElementById('speciesConfidence');
     if (!elemento) return;
@@ -79,8 +94,7 @@ function mostrarErro(mensagem) {
 
     definirConfianca('');
 
-    // Esvazia os demais campos (textContent vazio) para o :empty do CSS escondê-los
-    // e não ficarem presos em "Carregando...".
+
     ['speciesScientific', 'speciesDescription',
         'careLight', 'careWater', 'careSoil',
         'healthStatus', 'healthSigns', 'recommendations']
