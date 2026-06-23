@@ -128,7 +128,6 @@ button p {
 
     .container-primary-text {
         font-size: 12px;
-        margin-bottom: -10px;
         margin-top: 10px;
         margin-left: 5px;
     }
@@ -136,12 +135,10 @@ button p {
     .container-form button {
         width: 80%;
         height: 10%;
-        margin-top: 12px;
     }
 
     .container-dont-have-account {
-        margin-top: 25px;
         text-align: center;
-        font-size: 18px;
+        font-size: 14px;
     }
 }
