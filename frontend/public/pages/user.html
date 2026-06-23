@@ -10,7 +10,6 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
     <script type="module" src="../src/index.js"></script>
-    <script src="../src/utils/home.js" defer></script>
 </head>
 
 <body>
@@ -18,7 +17,8 @@
 
     <main>
         <div class="user-image">
-            <img src="" alt="">
+            <img id="profileImage" src="" alt="Perfil">
+            <input type="file" id="fileInput" accept="image/*" hidden>
         </div>
 
         <form id="userForm" class="user-form" action="#" method="post">
@@ -30,11 +30,11 @@
                 <input type="email" id="email" name="email" placeholder="Email" required>
                 <input type="password" id="password" name="password" placeholder="Change Password" required>
                 <input type="password" id="password" name="password" placeholder="Confirm Password" required>
-                <input type="friends" id="friends" name="friends" placeholder="Friends" required>
             </div>
             <button type="submit" class="btn-submit">Salvar Alterações</button>
         </form>
     </main>
+        <script src="../src/js/user.js"></script>
 </body>
 
 </html>
