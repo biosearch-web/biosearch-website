@@ -32,7 +32,6 @@ main {
     object-fit: cover; 
 }
 
-/* User form styles */
 .user-form{
     width: 320px;
     display: flex;
