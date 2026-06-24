@@ -135,3 +135,65 @@ h3 {
     object-fit: contain;
 }
 
+@media (max-width: 768px) {
+    .ranking {
+        width: 250px;
+        height: 160px;
+    }
+
+    .users {
+        width: 200px;
+        height: 180px;
+    }
+
+    .user-1,
+    .user-2,
+    .user-3 {
+        width: 90px;
+        height: 90px;
+    }
+
+    .user-1 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .friends-row {
+        display: grid;
+        grid-template-columns: repeat(5, 78px);
+        grid-template-rows: repeat(2, 78px);
+        gap: 10px;
+        padding: 8px 0;
+        width: fit-content;
+    }
+
+    .friend-circle {
+        width: 78px;
+        height: 78px;
+    }
+
+    .upload-btn {
+        width: 70px;
+        height: 70px;
+    }
+
+    .upload-btn img {
+        width: 40px;
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+}
