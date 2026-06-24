@@ -16,7 +16,6 @@ body {
     height: 100vh;
 }
 
-/*---- IMAGEM PRINCIPAL STYLE ----*/
 
 .container-main-image img {
     width: 350px;
@@ -24,7 +23,6 @@ body {
     margin-bottom: 20px;
 }
 
-/*---- FORMULARIO STYLE ----*/
 
 .container-form {
     width: 518px;
@@ -102,7 +100,6 @@ button p {
     color: #4ECDAE;
 }
 
-/*---- MEDIA QUERIES STYLE ----*/
 
 @media (max-width: 768px) {
 

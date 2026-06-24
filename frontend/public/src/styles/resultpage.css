@@ -16,7 +16,6 @@ body {
     padding: 32px 20px 80px;
 }
 
-/* Layout: imagem + análise lado a lado no desktop, empilhado no mobile */
 .resultado-grid {
     display: grid;
     grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
@@ -24,7 +23,6 @@ body {
     align-items: start;
 }
 
-/* ---- Card da imagem ---- */
 .card-imagem {
     position: relative;
     margin: 0;
@@ -86,7 +84,6 @@ body {
     display: none;
 }
 
-/* Badge de confiança — cor varia pela classe adicionada no JS */
 .badge-confianca {
     display: inline-block;
     margin-top: 12px;
@@ -197,7 +194,6 @@ body {
     padding: 14px 16px;
 }
 
-/* ---- Botão de música flutuante ---- */
 .music-btn {
     position: fixed;
     right: 30px;
@@ -226,7 +222,6 @@ body {
     filter: brightness(0) invert(1);
 }
 
-/* ---- Responsivo ---- */
 @media (max-width: 860px) {
     .resultado-grid {
         grid-template-columns: 1fr;
