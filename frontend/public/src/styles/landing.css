@@ -280,16 +280,14 @@ body {
 }
 
 .partner-logo {
-  font-size: 15px;
-  font-weight: 800;
-  color: rgba(255,255,255,0.18);
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  transition: color 0.2s;
+  height: auto;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  filter: brightness(1.2);
 }
 
 .partner-logo:hover {
-  color: rgba(255,255,255,0.4);
+  opacity: 1;
 }
 
 /* ── Offers ── */
