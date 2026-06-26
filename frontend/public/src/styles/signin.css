@@ -14,11 +14,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: auto;
 }
 
 .container-main-image img {
-    width: 348px;
-    height: 348px;
+    width: 280px;
+    height: 280px;
     margin-bottom: 18px;
 }
 
@@ -26,7 +27,7 @@ body {
     width: 516px;
     height: 426px;
     background-color: #ffffff;
-    padding: 42px;
+    padding: 40px;
     border-radius: 12px;
 }
 
@@ -98,16 +99,14 @@ button p {
     color: #4ECDAE;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .container-main-image img {
-        position: relative;
-        top: 72px;
-        width: 198px;
-        height: 198px;
+        width: 252px;
+        height: 252px;
+        margin-bottom: 60px;
     }
 
     .container-form {
-        margin-top: 78px;
         width: 100%;
         height: 100%;
         padding: 18px;
@@ -122,12 +121,7 @@ button p {
 
     .container-form button {
         width: 78%;
-        height: 48%;
-        margin-top: 48px;
-        font-size: 16px;
-    }
-
-    .container-dont-have-account {
-        margin-bottom: 78px;
+        height: 12%;
+        margin-top: 180px;
     }
 }

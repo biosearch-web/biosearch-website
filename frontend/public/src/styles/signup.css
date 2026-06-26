@@ -6,173 +6,87 @@
 
 body {
     background-color: #2D7132;
+    min-height: 100vh;
+    overflow-y: auto;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     min-height: 100vh;
+    height: auto;
+    padding: 6px 18px;
+    gap: 24px;
 }
+
 
 .container-main-image img {
-    width: 348px;
-    height: 348px;
-    margin-bottom: 18px;
+    width: 240px;
+    height: 240px;
 }
+
 
 .container-form {
-    width: 516px;
-    height: 426px;
-    background-color: #ffffff;
-    padding: 42px;
+    width: 520px;
+    max-width: 92%;
+    height: auto;
+
+    background: #fff;
+    padding: 36px;
     border-radius: 12px;
-}
-
-.container-primary-text {
-    font-size: 14px;
-    color: #000000;
-    margin-bottom: -18px;
-    margin-top: -18px;
-    margin-left: -18px;
-}
-
-.container-primary-text p {
-    font-size: 18px;
-    color: #000000;
-    margin-bottom: -18px;
 }
 
 .container-form-inputs {
     display: flex;
     flex-direction: column;
-    gap: 18px;
-    margin-top: 18px;
+    gap: 16px;
+    margin-top: 16px;
 }
 
 .container-form-inputs input {
     height: 42px;
     width: 100%;
-    padding: 12px;
+    padding: 10px 14px;
     border: 1px solid #A8FCE9;
     border-radius: 42px;
-    font-size: 16px;
-    margin-bottom: 12px;
+    font-size: 15px;
 }
 
 .input-name {
     display: flex;
-    gap: 18px;
-}
-
-.container-form-inputs p,
-.container-form-inputs a {
-    color: #161616b0;
-    text-align: right;
-    margin-top: 12px;
+    gap: 12px;
 }
 
 .container-form button {
-    width: 75%;
-    height: 20%;
-    padding: 12px;
-    background-color: #335441;
-    color: #ffffff;
+    width: 70%;
+    height: 40px;
+    margin: 18px auto 0;
+    display: block;
+
+    background: #335441;
+    color: white;
     border: none;
     border-radius: 42px;
-    cursor: pointer;
-    margin-top: 18px;
-    margin-left: 12%;
 }
 
-button p {
-    font-size: 18px;
-}
-
-.container-form button:hover {
-    background-color: #032221;
-}
-
-.container-dont-have-account {
-    margin-top: 12px;
+.container-dont-have-account{
     text-align: center;
-    font-size: 18px;
-}
-
-.container-dont-have-account a {
-    color: #4ECDAE;
 }
 
 @media (max-width: 768px) {
-    .container {
-        min-height: 100vh;
-        padding: 12px 0;
-    }
 
     .container-main-image img {
-        width: 150px;
-        height: 150px;
-        margin-bottom: 12px;
+        width: 200px;
+        height: 200px;
     }
 
     .container-form {
-        margin: 0;
-        width: 90%;
-        height: auto;
-        padding: 20px;
-        border-radius: 12px;
-    }
-
-    .container-primary-text {
-        font-size: 12px;
-        margin: 0;
-    }
-
-    .container-primary-text h1 {
-        font-size: 20px;
-        margin-bottom: 6px;
-    }
-
-    .container-primary-text p {
-        font-size: 14px;
-        margin-bottom: 0;
-    }
-
-    .container-form-inputs {
-        gap: 12px;
-        margin-top: 12px;
-    }
-
-    .container-form-inputs input {
-        height: 38px;
-        font-size: 14px;
-        margin-bottom: 8px;
-        padding: 10px;
+        width: 340px;
+        padding: 22px;
     }
 
     .input-name {
-        gap: 12px;
-    }
-
-    .input-name input {
-        flex: 1;
-    }
-
-    .container-form button {
-        width: 100%;
-        height: auto;
-        padding: 12px;
-        margin-top: 12px;
-        margin-left: 0;
-    }
-
-    button p {
-        font-size: 16px;
-    }
-
-    .container-dont-have-account {
-        margin-top: 12px;
-        font-size: 14px;
+        flex-direction: column;
     }
 }
