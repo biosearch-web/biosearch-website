@@ -280,10 +280,11 @@ body {
 }
 
 .partner-logo {
+  max-width: 120px;
   height: auto;
-  opacity: 0.7;
-  transition: opacity 0.2s;
-  filter: brightness(1.2);
+  display: block;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
 }
 
 .partner-logo:hover {
