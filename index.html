@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../src/styles/global.css">
+    <link rel="stylesheet" href="../src/styles/home.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <script type="module" src="../src/index.js"></script>
+    <script src="../src/js/home.js" defer></script>
+
+    <title>BioSearch - Home</title>
+</head>
+
+<body>
+    <app-header></app-header>
+
+    <main>
+        <div class="container">
+
+            <section class="hero">
+                <h2>Hi, there</h2>
+                <h1>
+                    Show us what specie you want to know about</h1>
+            </section>
+
+            <section class="take-photo">
+                <button class="upload-btn" id="openCameraBtn" type="button">
+                    <img src="../src/assets/camera-icon.png" alt="Upload Icon" width="80">
+                </button>
+
+                <input type="file" id="fileInput" accept="image/*" capture="environment" style="display: none;">
+            </section>
+
+        </div>
+
+        <footer>
+            <p>
+                By uploading an image you agree to our
+                <a href="/terms">Terms of Service</a>.
+                To learn more about how BioSearch handles your personal data,
+                check our <a href="/privacy">Privacy Policy</a>.
+            </p>
+        </footer>
+    </main>
+</body>
+
+</html>

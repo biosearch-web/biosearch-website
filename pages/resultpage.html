@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../src/styles/global.css">
+    <link rel="stylesheet" href="../src/styles/resultpage.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <script type="module" src="../src/index.js"></script>
+    <script type="module" src="../src/js/resultpage.js" defer></script>
+    <title>BioSearch</title>
+</head>
+
+<body>
+    <main>
+        <app-header></app-header>
+        <div class="container">
+            <div class="resultado-grid">
+
+                <figure class="card-imagem">
+                    <img id="previewImage" alt="Imagem enviada">
+                    <img id="userProfile" src="../src/assets/user-icon.png" alt="Perfil do usuário">
+                </figure>
+
+                <article class="card-analise" id="cardAnalise">
+                    <header class="analise-cabecalho">
+                        <h1 id="speciesName">Carregando...</h1>
+                        <p id="speciesScientific" class="cientifico"></p>
+                        <span id="speciesConfidence" class="badge-confianca"></span>
+                    </header>
+
+                    <p id="speciesDescription" class="descricao"></p>
+
+                    <section class="bloco">
+                        <h2 class="bloco-titulo">🪴 Cuidados</h2>
+                        <div class="cuidados-grid">
+                            <div class="cuidado-item">
+                                <span class="cuidado-icone">☀️</span>
+                                <span class="cuidado-rotulo">Luz</span>
+                                <span class="cuidado-valor" id="careLight">Carregando...</span>
+                            </div>
+                            <div class="cuidado-item">
+                                <span class="cuidado-icone">💧</span>
+                                <span class="cuidado-rotulo">Rega</span>
+                                <span class="cuidado-valor" id="careWater">Carregando...</span>
+                            </div>
+                            <div class="cuidado-item">
+                                <span class="cuidado-icone">🌱</span>
+                                <span class="cuidado-rotulo">Solo</span>
+                                <span class="cuidado-valor" id="careSoil">Carregando...</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="bloco">
+                        <h2 class="bloco-titulo">🩺 Saúde da planta</h2>
+                        <p class="linha-info"><strong>Estado:</strong> <span id="healthStatus">Carregando...</span></p>
+                        <p class="linha-info"><strong>Sinais:</strong> <span id="healthSigns">Carregando...</span></p>
+                    </section>
+
+                    <section class="bloco">
+                        <h2 class="bloco-titulo">✅ Recomendações</h2>
+                        <p class="recomendacoes" id="recommendations">Carregando...</p>
+                    </section>
+                </article>
+
+            </div>
+
+            <button class="music-btn" aria-label="Tocar música">
+                 <img src="../src/assets/music-svgrepo-com.svg" alt="">
+            </button>
+        </div>
+    </main>
+
+</body>
+
+</html>
