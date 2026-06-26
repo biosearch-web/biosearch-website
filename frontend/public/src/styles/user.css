@@ -84,6 +84,9 @@ main {
 }
 
 @media (min-width: 768px) {
+    .form-name{
+        max-width: 100%;
+    }
     .user-image {
         height: 198px;
         width: 198px;
