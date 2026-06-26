@@ -99,29 +99,28 @@ button p {
     color: #4ECDAE;
 }
 
-@media (max-width: 1200px) {
+  @media (max-width: 768px) {
+
     .container-main-image img {
         width: 252px;
         height: 252px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
     .container-form {
         width: 100%;
-        height: 100%;
         padding: 18px;
+        height: auto; /* importante: não força altura */
     }
 
     .container-primary-text {
         font-size: 12px;
-        margin-bottom: -12px;
-        margin-top: 12px;
-        margin-left: 6px;
+        margin: 12px 0 10px 6px; /* simplificado */
     }
 
     .container-form button {
-        width: 78%;
-        height: 12%;
-        margin-top: 180px;
+        width: 80%;
+        height: 42px; /* fixa altura boa */
+        margin-top: 20px; /* remove o 180px absurdo */
     }
 }
