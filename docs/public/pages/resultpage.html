@@ -5,24 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../src/styles/global.css">
-    <link rel="stylesheet" href="../src/styles/resultpage.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/resultpage.css">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
-    <script type="module" src="../src/index.js"></script>
-    <script type="module" src="../src/js/resultpage.js" defer></script>
+    <script type="module" src="../index.js"></script>
+    <script type="module" src="../js/resultpage.js" defer></script>
+
     <title>BioSearch</title>
 </head>
 
 <body>
     <main>
         <app-header></app-header>
+
         <div class="container">
             <div class="resultado-grid">
 
                 <figure class="card-imagem">
                     <img id="previewImage" alt="Imagem enviada">
-                    <img id="userProfile" src="../src/assets/user-icon.png" alt="Perfil do usuário">
+                    <img id="userProfile" src="../assets/user-icon.png" alt="Perfil do usuário">
                 </figure>
 
                 <article class="card-analise" id="cardAnalise">
@@ -70,7 +72,7 @@
             </div>
 
             <button class="music-btn" aria-label="Tocar música">
-                 <img src="../src/assets/music-svgrepo-com.svg" alt="">
+                <img src="../assets/music-svgrepo-com.svg" alt="">
             </button>
         </div>
     </main>
