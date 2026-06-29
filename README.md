@@ -21,7 +21,7 @@ Não há `package.json`, build step ou framework. A migração futura para React
 ## Estrutura do projeto
 
 ```
-frontend/
+docs/
 ├── public/index.html          # template raiz (a definir)
 ├── pages/                     # uma página HTML por tela
 │   ├── start.html             # tela inicial (implementada)
