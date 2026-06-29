@@ -6,6 +6,8 @@ BioSearch é um aplicativo web que recebe a foto de uma planta e usa IA para ide
 
 O projeto visa utilizar de maneira real os conhecimentos obtidos na matéria de Ferramentas Web e UX, realizando a produção de um website a partir de um protótipo de aplicação feita no figma.
 
+GitHub Pages: https://biosearch-web.github.io/biosearch-website/
+
 ## Stack atual
 
 O projeto está em fase inicial e, neste momento, é construído com tecnologias web puras:
