@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #032221;
+    background: radial-gradient(circle at 20% 0%, #0a3b38 0%, #032221 55%);
     min-height: 100vh;
     overflow-x: hidden;
 }
