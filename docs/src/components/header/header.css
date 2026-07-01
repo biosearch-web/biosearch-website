@@ -3,8 +3,8 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: linear-gradient(90deg, #2E6B4A 0%, #3F7A58 100%);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  background: #f8fef9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 header {
@@ -20,7 +20,7 @@ nav {
 }
 
 .menu-icon {
-  color: white;
+  color: #2f4f3f;
   font-size: 35px;
   cursor: pointer;
   user-select: none;
@@ -44,7 +44,7 @@ nav {
 .logo h1 {
   margin: 0;
   margin-top: 5px;
-  color: white;
+  color: #2f4f3f;
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
@@ -70,8 +70,8 @@ nav {
   object-fit: cover;
   border-radius: 50%;
   background-color: #f0f0f0;
-  border: 2px solid rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -86,10 +86,10 @@ nav {
   left: -280px;
   width: 280px;
   height: 100vh;
-  background: linear-gradient(180deg, #3D544D 0%, #2F443D 100%);
+  background: #f8fef9;
   transition: left 0.3s ease;
   z-index: 2000;
-  box-shadow: 2px 0 18px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 0 18px rgba(0, 0, 0, 0.12);
 }
 
 .sidebar.active {
@@ -97,7 +97,7 @@ nav {
 }
 
 .close-menu {
-  color: white;
+  color: #2f4f3f;
   font-size: 30px;
   font-weight: bold;
   cursor: pointer;
@@ -116,7 +116,7 @@ nav {
 }
 
 .links a {
-  color: white;
+  color: #2f4f3f;
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
@@ -138,7 +138,7 @@ nav {
 
 #log-out-icon,
 #ranking-icon {
-  filter: brightness(0) invert(1);
+  filter: none;
 }
 
 @media (max-width: 768px) {
