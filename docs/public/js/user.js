@@ -1,5 +1,5 @@
 const PROFILE_IMAGE_KEY = 'biosearch-profile-image';
-const DEFAULT_PROFILE_IMAGE = '../src/assets/user-icon.png';
+const DEFAULT_PROFILE_IMAGE = '../assets/user-icon.png';
 
 function updateHeaderProfileImage(imageSrc) {
     const header = document.querySelector('app-header');
